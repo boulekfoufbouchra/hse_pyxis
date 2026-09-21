@@ -11,6 +11,10 @@ Extrait de app_risk.pyy.py — utilisé par audit_app.py pour :
 Ne contient AUCUNE logique métier (Monte Carlo, PLL, coût-bénéfice, etc.).
 Ces logiques restent dans leurs modules respectifs.
 """
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 import sqlite3
 from contextlib import closing
