@@ -18,7 +18,7 @@ import os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 import sqlite3
-from contextlib import import closing
+from contextlib import closing
 
 import pandas as pd
 import numpy as np
