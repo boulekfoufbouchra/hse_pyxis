@@ -14,10 +14,11 @@ Ces logiques restent dans leurs modules respectifs.
 import sys
 import os
 
+# 1. إضافة المجلد الرئيسي لمسارات بايثون
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 import sqlite3
-from contextlib import closing
+from contextlib import import closing
 
 import pandas as pd
 import numpy as np
@@ -25,9 +26,10 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
-from .ui.theme import show_plotly
-from .ui.i18n import t
-from .ui.display import tr_matrix_label
+# 2. الاستيراد المباشر بدون نقاط
+from ui.theme import show_plotly
+from ui.i18n import t
+from ui.display import tr_matrix_label
 
 
 DB_PATH = "matrice.db"
