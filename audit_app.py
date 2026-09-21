@@ -10,6 +10,10 @@ Application Streamlit unique — 4 étapes :
 Usage:
     streamlit run audit_app.py
 """
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 import streamlit as st
 import json
