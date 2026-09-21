@@ -25,9 +25,9 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
-from ui.theme import show_plotly
-from ui.i18n import t
-from ui.display import tr_matrix_label
+from .ui.theme import show_plotly
+from .ui.i18n import t
+from .ui.display import tr_matrix_label
 
 
 DB_PATH = "matrice.db"
